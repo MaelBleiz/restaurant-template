@@ -1,0 +1,47 @@
+{
+  "header": {
+    "logoAlt": "Logo du restaurant",
+    "logoSrc": "images/logo.png"
+  },
+  "hero": {
+    "imageSrc": "images/hero1.jpg",
+    "imageAlt": "Image by PDPics from Pixabay"
+  },
+  "infoSection": {
+    "title": "Bienvenue à la Crêperie Délices",
+    "text": "Découvrez une expérience culinaire unique dans une ambiance chaleureuse et conviviale. Notre équipe vous accueille avec des plats faits maison, préparés à partir d'ingrédients frais et locaux.",
+    "text2": "Nous vous invitons à explorer notre carte variée, adaptée à tous les goûts et à toutes les envies. Nous proposons également des options végétariennes et sans gluten pour satisfaire toutes les préférences alimentaires.",
+    "imageSrc": "images/info.jpg",
+    "imageAlt": "Image by DoroT Schenk from Pixabay"
+  },
+  "gallery": [
+    { "src": "images/gallery1.jpg", "alt": "Image by DoroT Schenk from Pixabay" },
+    { "src": "images/gallery2.jpg", "alt": "Image by congerdesign from Pixabay" },
+    { "src": "images/gallery3.jpg", "alt": "Image by Yves from Pixabay" },
+    { "src": "images/gallery4.jpg", "alt": "Image by Jill Wellington from Pixabay" },
+    { "src": "images/gallery5.jpg", "alt": "Image by Larry White from Pixabay" }
+  ],
+  "menu": [
+    { "title": "Menu Déjeuner", "imageSrc": "images/menu1.png", "imageAlt": "Menu déjeuner" },
+    { "title": "Menu Dîner", "imageSrc": "images/menu2.png", "imageAlt": "Menu dîner" }
+  ],
+  "location": {
+    "mapSrc": "images/map-screenshot.png",
+    "mapAlt": "Capture d'écran Google Maps du restaurant",
+    "address": "Adresse: 123 Rue de la Gastronomie, 29000 Douarnenez, France",
+    "contact": {
+      "phone": "+33 1 ** 45 ** 89",
+      "email": "contact@restaurant.fr"
+    }
+  },
+  "footer": {
+    "nav": [
+      { "label": "Accueil", "href": "#header" },
+      { "label": "À propos", "href": "#info-section" },
+      { "label": "Galerie", "href": "#gallery" },
+      { "label": "Menus", "href": "#menu" },
+      { "label": "Contact", "href": "#location" }
+    ],
+    "copyright": "© 2025 Crêperie Délices. Tous droits réservés."
+  }
+}
