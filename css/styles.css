@@ -1,7 +1,5 @@
-/* Add more space between sections */
-section {
-  margin-bottom: var(--spacing-lg);
-}
+
+
 /* Reset & base styles */
 * {
   margin: 0;
@@ -96,7 +94,7 @@ header {
   gap: var(--spacing-md);
   justify-content: center;
   padding: var(--spacing-lg) var(--spacing-md);
-  background: var(--color-bg-light);
+  background: var(--color-primary);
 }
 .gallery img {
   width: 600px;
@@ -150,7 +148,7 @@ header {
   align-items: flex-start;
   gap: var(--spacing-lg);
   padding: var(--spacing-lg) var(--spacing-md);
-  background: var(--color-white);
+  background: var(--color-primary);
 }
 .map-contact {
   display: flex;
@@ -169,7 +167,7 @@ header {
   flex-direction: column;
   gap: var(--spacing-sm);
   font-size: var(--font-size-lg);
-  color: var(--color-text);
+  color: var(--color-white);
 }
 
 /* Footer */
@@ -186,7 +184,7 @@ footer {
   margin-bottom: var(--spacing-sm);
 }
 #footer-nav a {
-  color: var(--color-secondary);
+  color: var(--color-bg-light);
   text-decoration: none;
   font-size: var(--font-size-lg);
   font-family: var(--font-primary);
@@ -196,13 +194,4 @@ footer {
   color: var(--color-tertiary);
 }
 
-@media (max-width: 900px) {
-  .info-section, .location-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  .map-contact {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+

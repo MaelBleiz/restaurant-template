@@ -20,8 +20,8 @@
 
     /* Spacing */
     --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 3rem;
+    --spacing-md: 2.5rem;
+    --spacing-lg: 6rem;
 
     /* Shadows */
     --shadow-sm: 0 2px 20px rgba(0,0,0,0.1);
