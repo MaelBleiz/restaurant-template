@@ -31,7 +31,7 @@
   }
   .gallery img {
     width: 95vw;
-    height: 180px;
+    height: 380px;
   }
   .gallery img.portrait {
     width: 60vw;
@@ -47,7 +47,7 @@
   }
   .menu-item img {
     width: 80vw;
-    height: 100px;
+    height: 100%;
   }
   .location-section {
     flex-direction: column;
@@ -63,7 +63,7 @@
   }
   #map-image {
     width: 90vw;
-    height: 120px;
+    height: 250px;
   }
   .address-contact {
     font-size: 1rem;
@@ -165,8 +165,8 @@
   .info-section, .location-section {
     flex-direction: row;
     align-items: center;
-    padding: var(--spacing-xl) var(--spacing-lg);
-    gap: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    gap: var(--spacing-lg);
   }
   .info-text h1 {
     font-size: var(--font-size-xxl);
@@ -176,7 +176,7 @@
   }
   .gallery {
     gap: var(--spacing-lg);
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding: var(--spacing-lg);
   }
   .gallery img {
     width: 400px;
@@ -187,8 +187,8 @@
     height: 400px;
   }
   .menu-section {
-    gap: var(--spacing-xl);
-    padding: var(--spacing-xl) var(--spacing-lg);
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
   }
   .menu-item {
     width: 400px;

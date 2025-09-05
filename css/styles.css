@@ -32,7 +32,7 @@ header {
   align-items: center;
 }
 #logo {
-  height: 80px;
+  height: 60px;
   width: auto;
 }
 
@@ -59,7 +59,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: var(--spacing-lg);
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: var(--spacing-lg);
   background: var(--color-white);
 }
 .info-text {
@@ -93,7 +93,7 @@ header {
   flex-wrap: wrap;
   gap: var(--spacing-md);
   justify-content: center;
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: var(--spacing-lg);
   background: var(--color-primary);
 }
 .gallery img {
@@ -116,7 +116,7 @@ header {
   flex-wrap: wrap;
   gap: var(--spacing-lg);
   justify-content: center;
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: var(--spacing-lg);
   background: var(--color-white);
 }
 .menu-item {
@@ -147,7 +147,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   gap: var(--spacing-lg);
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: var(--spacing-lg);
   background: var(--color-primary);
 }
 .map-contact {
