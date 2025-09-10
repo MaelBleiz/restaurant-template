@@ -8,7 +8,7 @@
     padding: var(--spacing-sm) 0;
   }
   #logo {
-    height: 50px;
+    height: 100px;
   }
   #hero {
     height: 220px;
@@ -86,10 +86,10 @@
     font-size: 1rem;
   }
   header {
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-sm) 0;
   }
   #logo {
-    height: 65px;
+    height: 150px;
   }
   #hero {
     height: 350px;
@@ -154,10 +154,10 @@
     font-size: 1.1rem;
   }
   header {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-sm) 0;
   }
   #logo {
-    height: 90px;
+    height: 250px;
   }
   #hero {
     height: 650px;

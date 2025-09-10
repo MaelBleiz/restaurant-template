@@ -23,7 +23,7 @@ img {
 /* Header */
 header {
   background: var(--color-primary);
-  padding: var(--spacing-md) 0;
+  padding: 0;
   box-shadow: var(--shadow-sm);
 }
 .logo-container {
@@ -32,7 +32,7 @@ header {
   align-items: center;
 }
 #logo {
-  height: 60px;
+  height: 300px;
   width: auto;
 }
 
@@ -68,7 +68,7 @@ header {
 }
 .info-text h1 {
   font-family: var(--font-primary);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-lg);
   color: var(--color-primary);
   margin-bottom: var(--spacing-sm);
 }
