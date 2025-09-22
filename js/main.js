@@ -16,10 +16,10 @@ function populateContent(content) {
   heroImage.alt = content.hero.imageAlt;
 
   // Info Section
-  document.getElementById('info-title').textContent = content.infoSection.title;
-  document.getElementById('info-text').textContent = content.infoSection.text;
+  document.getElementById('info-title').innerHTML = content.infoSection.title;
+  document.getElementById('info-text').innerHTML = content.infoSection.text;
   if (document.getElementById('info-text-2')) {
-    document.getElementById('info-text-2').textContent = content.infoSection.text2 || '';
+    document.getElementById('info-text-2').innerHTML = content.infoSection.text2 || '';
   }
   const infoImage = document.getElementById('info-image');
   infoImage.src = content.infoSection.imageSrc;

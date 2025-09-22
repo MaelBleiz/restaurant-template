@@ -13,10 +13,10 @@
     /* Fonts */
     --font-primary: "Noto Sans Display", serif;
     --font-secondary: "Work Sans", sans-serif;
-    --font-size-base: 1rem;
+    --font-size-base: 1.1rem;
     --font-size-lg: 1.25rem;
     --font-size-xl: 2rem;
-    --font-size-xxl: 3rem;
+    --font-size-xxl: 3.5rem;
 
     /* Spacing */
     --spacing-sm: 1rem;

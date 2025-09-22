@@ -169,11 +169,9 @@
     gap: var(--spacing-lg);
   }
   .info-text h1 {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
   }
-  .info-image img, #info-image {
-    max-width: 400px;
-  }
+
   .gallery {
     gap: var(--spacing-lg);
     padding: var(--spacing-lg);
