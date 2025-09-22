@@ -74,6 +74,25 @@
     width: 100%;
   }
   
+  .description-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .description-background {
+    display: none;
+  }
+  
+  .description-content {
+    padding: var(--spacing-sm);
+    justify-content: center;
+  }
+  
+  .description-text {
+    width: 100%;
+    padding: var(--spacing-sm);
+  }
+  
   #footer-nav {
     flex-direction: column;
     gap: var(--spacing-sm);
@@ -140,6 +159,15 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  }
+
+  .description-content {
+    padding: var(--spacing-md);
+  }
+
+  .description-text {
+    width: 65%;
+    padding: var(--spacing-md);
   }
 
   #footer-nav {

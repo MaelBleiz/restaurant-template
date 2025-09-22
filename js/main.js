@@ -35,6 +35,12 @@ function populateContent(content) {
   infoImage.src = content.infoSection.imageSrc;
   infoImage.alt = content.infoSection.imageAlt;
 
+  // Description Section
+  if (content.description) {
+    document.getElementById('description-title').textContent = content.description.title;
+    document.getElementById('description-text').innerHTML = content.description.text;
+  }
+
   // Gallery
   const gallery = document.getElementById('gallery');
   content.gallery.forEach((img, idx) => {

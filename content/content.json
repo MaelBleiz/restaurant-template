@@ -18,6 +18,10 @@
     "imageSrc": "images/info.jpg",
     "imageAlt": "Image by DoroT Schenk from Pixabay"
   },
+  "description": {
+    "title": "Notre Histoire",
+    "text": "Depuis trois générations, notre famille perpétue la tradition de la <span class=\"highlight\"> crêperie bretonne authentique</span>. Chaque recette est transmise avec passion, chaque ingrédient soigneusement sélectionné pour vous offrir une <span class=\"highlight\">expérience gustative inoubliable</span>. Venez découvrir l'âme de la Bretagne dans chacune de nos créations."
+  },
   "gallery": [
     { "src": "images/gallery1.jpg", "alt": "Image by DoroT Schenk from Pixabay" },
     { "src": "images/gallery2.jpg", "alt": "Image by congerdesign from Pixabay" },
