@@ -87,6 +87,10 @@ function populateContent(content) {
   document.getElementById('contact-phone').textContent = `Téléphone : ${content.location.contact.phone}`;
   document.getElementById('contact-email').textContent = `Email : ${content.location.contact.email}`;
 
+  // Populate contact box with contact info
+  document.getElementById('contact-box-phone').textContent = content.location.contact.phone;
+  document.getElementById('contact-box-email').textContent = content.location.contact.email;
+
   // Footer nav
   const footerNav = document.getElementById('footer-nav');
   content.footer.nav.forEach(link => {
@@ -96,4 +100,33 @@ function populateContent(content) {
     footerNav.appendChild(a);
   });
   document.getElementById('copyright').textContent = content.footer.copyright;
+
+  // Initialize floating contact button functionality
+  initializeFloatingContactButton();
+}
+
+function initializeFloatingContactButton() {
+  const contactBtn = document.getElementById('floating-contact-btn');
+  const contactBox = document.getElementById('contact-box');
+  const closeBtn = document.getElementById('close-contact-box');
+
+  // Show contact box when button is clicked
+  contactBtn.addEventListener('click', () => {
+    contactBox.classList.add('show');
+    contactBtn.style.display = 'none';
+  });
+
+  // Hide contact box when close button is clicked
+  closeBtn.addEventListener('click', () => {
+    contactBox.classList.remove('show');
+    contactBtn.style.display = 'block';
+  });
+
+  // Hide contact box when clicking outside of it
+  document.addEventListener('click', (event) => {
+    if (!contactBox.contains(event.target) && !contactBtn.contains(event.target)) {
+      contactBox.classList.remove('show');
+      contactBtn.style.display = 'block';
+    }
+  });
 }

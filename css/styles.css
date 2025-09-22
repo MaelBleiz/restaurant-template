@@ -180,7 +180,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  position: relative;
 }
 
 #panoramic-image {
@@ -190,6 +190,92 @@ header {
   object-position: center;
   display: block;
   opacity: 0.75;
+}
+
+/* Floating Contact Button */
+.floating-contact-btn {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-tertiary);
+  color: var(--color-white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
+
+.floating-contact-btn:hover {
+  background: var(--color-tertiary-dark);
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Contact Box */
+.contact-box {
+  position: absolute;
+  left: var(--spacing-md);
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 20;
+  min-width: 280px;
+}
+
+.contact-box.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(10px);
+}
+
+.contact-box-content {
+  padding: var(--spacing-lg);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-text-light);
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: var(--color-text);
+}
+
+.contact-box h3 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+}
+
+.contact-info p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+}
+
+.contact-info strong {
+  color: var(--color-secondary);
 }
 
 /* Description Section */

@@ -43,8 +43,8 @@
     }
   ],
   "menu": [
-    { "title": "Carte Déjeuner", "imageSrc": "images/menu1.png", "imageAlt": "Carte déjeuner" },
-    { "title": "Carte boissons", "imageSrc": "images/menu2.png", "imageAlt": "Carte boissons" }
+    { "title": "Nos spéciales salées", "imageSrc": "images/menu1.png", "imageAlt": "Carte déjeuner" },
+    { "title": "Nos spéciales sucrées", "imageSrc": "images/menu2.png", "imageAlt": "Carte boissons" }
   ],
   "location": {
     "mapSrc": "images/map-screenshot.png",
