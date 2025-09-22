@@ -41,6 +41,29 @@ function populateContent(content) {
     document.getElementById('description-text').innerHTML = content.description.text;
   }
 
+  // Reviews Section
+  if (content.reviews) {
+    const reviewsSlider = document.querySelector('.reviews-slider');
+    content.reviews.forEach(review => {
+      const reviewCard = document.createElement('div');
+      reviewCard.className = 'review-card';
+      
+      // Create star rating
+      const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
+      
+      reviewCard.innerHTML = `
+        <div class="review-header">
+          <span class="review-name">${review.name}</span>
+          <span class="review-rating">${stars}</span>
+        </div>
+        <p class="review-text">"${review.text}"</p>
+        <div class="review-date">${review.date}</div>
+      `;
+      
+      reviewsSlider.appendChild(reviewCard);
+    });
+  }
+
   // Gallery
   const gallery = document.getElementById('gallery');
   content.gallery.forEach((img, idx) => {

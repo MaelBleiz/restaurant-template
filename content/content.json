@@ -22,6 +22,26 @@
     "title": "Notre Histoire",
     "text": "Depuis trois générations, notre famille perpétue la tradition de la <span class=\"highlight\"> crêperie bretonne authentique</span>. Chaque recette est transmise avec passion, chaque ingrédient soigneusement sélectionné pour vous offrir une <span class=\"highlight\">expérience gustative inoubliable</span>. Venez découvrir l'âme de la Bretagne dans chacune de nos créations."
   },
+  "reviews": [
+    {
+      "name": "Marie Dubois",
+      "rating": 5,
+      "text": "Une expérience extraordinaire ! Les crêpes sont délicieuses et l'accueil chaleureux. Je recommande vivement !",
+      "date": "Mars 2025"
+    },
+    {
+      "name": "Jean-Pierre Martin",
+      "rating": 5,
+      "text": "Authenticité bretonne garantie ! Les recettes traditionnelles sont respectées à la perfection.",
+      "date": "Février 2025"
+    },
+    {
+      "name": "Sophie Laurent",
+      "rating": 4,
+      "text": "Cadre magnifique et cuisine savoureuse. Un moment de pur plaisir en famille.",
+      "date": "Janvier 2025"
+    }
+  ],
   "gallery": [
     { "src": "images/gallery1.jpg", "alt": "Image by DoroT Schenk from Pixabay" },
     { "src": "images/gallery2.jpg", "alt": "Image by congerdesign from Pixabay" },

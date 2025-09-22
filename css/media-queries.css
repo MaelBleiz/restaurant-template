@@ -20,8 +20,15 @@
     gap: var(--spacing-md);
   }
   .info-text h1 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
+    text-align: center;
   }
+  
+  .info-text p {
+    font-size: var(--font-size-sm);
+    text-align: center;
+  }
+  
   .info-image img, #info-image {
     max-width: 90vw;
   }
@@ -121,7 +128,14 @@
   }
   .info-text h1 {
     font-size: var(--font-size-xl);
+    text-align: center;
   }
+  
+  .info-text p {
+    font-size: var(--font-size-base);
+    text-align: center;
+  }
+  
   .info-image img, #info-image {
     max-width: 70vw;
   }

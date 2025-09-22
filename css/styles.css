@@ -175,7 +175,7 @@ header {
 /* Panoramic Section */
 .panoramic-section {
   width: 100%;
-  height: 450px;
+  height: 400px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -241,6 +241,115 @@ header {
   font-size: var(--font-size-base);
   color: var(--color-text);
   line-height: 1.6;
+}
+
+/* Reviews Section */
+.reviews-section {
+  position: relative;
+  background: var(--color-primary);
+  padding: var(--spacing-md) 0;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-background {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 70%;
+  background-image: url('../images/gallery2.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius);
+  z-index: 1;
+  opacity: 0.7;
+  border: 25px solid var(--color-white);
+}
+
+.reviews-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  padding: var(--spacing-sm);
+}
+
+.reviews-carousel {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+}
+
+.reviews-slider {
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(0); }
+  33.33% { transform: translateX(-100%); }
+  58.33% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
+  91.66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  margin: 0;
+  border: 5px solid var(--color-secondary);
+  flex-shrink: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.review-name {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: var(--font-size-base);
+}
+
+.review-rating {
+  color: var(--color-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.review-text {
+  font-style: italic;
+  color: var(--color-text);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.review-date {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-light);
+  text-align: right;
 }
 
 /* Gallery */
