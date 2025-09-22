@@ -43,8 +43,26 @@
     }
   ],
   "menu": [
-    { "title": "Nos spéciales salées", "imageSrc": "images/menu1.png", "imageAlt": "Carte déjeuner" },
-    { "title": "Nos spéciales sucrées", "imageSrc": "images/menu2.png", "imageAlt": "Carte boissons" }
+    { 
+      "title": "Nos spéciales salées", 
+      "items": [
+        "Crêpe complète (jambon, œuf, fromage)",
+        "Crêpe saumon fumé et crème fraîche",
+        "Crêpe champignons et emmental",
+        "Galette andouille et oignons",
+        "Crêpe épinards et chèvre"
+      ]
+    },
+    { 
+      "title": "Nos spéciales sucrées", 
+      "items": [
+        "Crêpe au sucre et beurre salé",
+        "Crêpe chocolat-banane",
+        "Crêpe confiture maison",
+        "Crêpe pommes caramélisées",
+        "Crêpe Nutella et chantilly"
+      ]
+    }
   ],
   "location": {
     "mapSrc": "images/map-screenshot.png",
@@ -58,7 +76,7 @@
   "footer": {
     "nav": [
       { "label": "Accueil", "href": "#header" },
-      { "label": "À propos", "href": "#info-section" },
+      { "label": "Notre histoire", "href": "#info-section" },
       { "label": "Avis", "href": "#reviews" },
       { "label": "Menus", "href": "#menu" },
       { "label": "Contact", "href": "#location" }

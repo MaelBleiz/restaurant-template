@@ -93,10 +93,21 @@ header {
   width: 40%;
   height: 100%;
   background-image: url('../images/background1.jpg');
-  background-size: cover;
+  background-size: 120% auto;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: 1;
   opacity: 0.3;
+  animation: backgroundScroll 20s linear infinite;
+}
+
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
 }
 
 .content {
@@ -285,19 +296,26 @@ header {
   display: flex;
   align-items: center;
   background: var(--color-white);
+  margin-top: -80px;
+  z-index: 5;
 }
 
 .description-background {
   position: absolute;
-  top: 0;
+  bottom: -50px;
   left: 0;
   width: 40%;
-  height: 100%;
+  height: calc(100% + 40px);
   background-image: url('../images/gallery4.jpg');
-  background-size: cover;
+  background-size: 120% auto;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: 1;
+  animation: backgroundScroll 30s linear infinite;
+  border: 5px solid var(--color-white);
 }
+
+
 
 .description-content {
   position: relative;
@@ -343,7 +361,7 @@ header {
 .reviews-background {
   position: absolute;
   top: 55%;
-  left: 35%;
+  left: 62.5%;
   transform: translate(-50%, -50%);
   width: 60%;
   height: 60%;
@@ -442,7 +460,7 @@ header {
 .menu-section {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
   justify-content: center;
   padding: var(--spacing-lg);
   background: var(--color-white);
@@ -450,23 +468,37 @@ header {
 .menu-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: var(--color-bg-light);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
-  padding: var(--spacing-sm);
-  width: var(--image-size-md);
-}
-.menu-item img {
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-sm);
+  padding: var(--spacing-lg);
+  width: min(90vw, 400px);
+  text-align: center;
 }
 .menu-item h2 {
   font-family: var(--font-primary);
   font-size: var(--font-size-lg);
-  color: var(--color-primary-dark);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-list li {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid rgba(0, 108, 103, 0.1);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  line-height: 1.4;
+}
+.menu-list li:last-child {
+  border-bottom: none;
+}
+.menu-list li:hover {
+  color: var(--color-primary);
+  transition: color 0.2s ease;
 }
 
 /* Location Section */

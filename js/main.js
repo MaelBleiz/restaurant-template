@@ -69,13 +69,23 @@ function populateContent(content) {
   content.menu.forEach(menu => {
     const menuDiv = document.createElement('div');
     menuDiv.className = 'menu-item';
-    const img = document.createElement('img');
-    img.src = menu.imageSrc;
-    img.alt = menu.imageAlt;
+    
+    // Create title
     const title = document.createElement('h2');
     title.textContent = menu.title;
-    menuDiv.appendChild(img);
     menuDiv.appendChild(title);
+    
+    // Create menu items list
+    const menuList = document.createElement('ul');
+    menuList.className = 'menu-list';
+    
+    menu.items.forEach(item => {
+      const listItem = document.createElement('li');
+      listItem.textContent = item;
+      menuList.appendChild(listItem);
+    });
+    
+    menuDiv.appendChild(menuList);
     menuSection.appendChild(menuDiv);
   });
 
