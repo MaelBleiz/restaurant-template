@@ -11,6 +11,10 @@
     "title": "Bienvenue à la<br><span class=\"special\">Crêperie Délices</span>",
     "text": "Découvrez une <span class=\"highlight\">expérience culinaire unique</span> dans une ambiance chaleureuse et conviviale. Notre équipe vous accueille avec des plats faits maison, préparés à partir d'ingrédients frais et locaux.",
     "text2": "Nous vous invitons à explorer <span class=\"highlight\">notre carte variée</span>, adaptée à tous les goûts et à toutes les envies. Nous proposons également des options végétariennes et sans gluten pour satisfaire toutes les préférences alimentaires.",
+    "button": {
+      "text": "Réserver en ligne",
+      "href": "https://www.thefork.fr/"
+    },
     "imageSrc": "images/info.jpg",
     "imageAlt": "Image by DoroT Schenk from Pixabay"
   },

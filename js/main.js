@@ -21,6 +21,16 @@ function populateContent(content) {
   if (document.getElementById('info-text-2')) {
     document.getElementById('info-text-2').innerHTML = content.infoSection.text2 || '';
   }
+  
+  // Add reservation button if it exists
+  if (content.infoSection.button && document.getElementById('info-text-2')) {
+    const button = document.createElement('a');
+    button.href = content.infoSection.button.href;
+    button.textContent = content.infoSection.button.text;
+    button.className = 'reservation-button';
+    document.getElementById('info-text-2').appendChild(button);
+  }
+  
   const infoImage = document.getElementById('info-image');
   infoImage.src = content.infoSection.imageSrc;
   infoImage.alt = content.infoSection.imageAlt;
