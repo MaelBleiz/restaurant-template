@@ -248,7 +248,7 @@ header {
   position: relative;
   background: var(--color-primary);
   padding: var(--spacing-md) 0;
-  min-height: 500px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,11 +256,11 @@ header {
 
 .reviews-background {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 35%;
   transform: translate(-50%, -50%);
   width: 60%;
-  height: 70%;
+  height: 60%;
   background-image: url('../images/gallery2.jpg');
   background-size: cover;
   background-position: center;
@@ -350,29 +350,6 @@ header {
   font-size: var(--font-size-xs);
   color: var(--color-text-light);
   text-align: right;
-}
-
-/* Gallery */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
-  justify-content: center;
-  padding: var(--spacing-lg);
-  background: var(--color-primary);
-}
-.gallery img {
-  width: var(--image-size-lg);
-  height: var(--image-size-md);
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
-  background: var(--color-white);
-}
-.gallery img.portrait {
-  width: var(--image-size-md);
-  height: var(--image-size-lg);
-  object-fit: cover;
 }
 
 /* Menu Section */

@@ -42,13 +42,6 @@
       "date": "Janvier 2025"
     }
   ],
-  "gallery": [
-    { "src": "images/gallery1.jpg", "alt": "Image by DoroT Schenk from Pixabay" },
-    { "src": "images/gallery2.jpg", "alt": "Image by congerdesign from Pixabay" },
-    { "src": "images/gallery3.jpg", "alt": "Image by Yves from Pixabay" },
-    { "src": "images/gallery4.jpg", "alt": "Image by Jill Wellington from Pixabay" },
-    { "src": "images/gallery5.jpg", "alt": "Image by Larry White from Pixabay" }
-  ],
   "menu": [
     { "title": "Carte Déjeuner", "imageSrc": "images/menu1.png", "imageAlt": "Carte déjeuner" },
     { "title": "Carte boissons", "imageSrc": "images/menu2.png", "imageAlt": "Carte boissons" }
@@ -66,7 +59,7 @@
     "nav": [
       { "label": "Accueil", "href": "#header" },
       { "label": "À propos", "href": "#info-section" },
-      { "label": "Galerie", "href": "#gallery" },
+      { "label": "Avis", "href": "#reviews" },
       { "label": "Menus", "href": "#menu" },
       { "label": "Contact", "href": "#location" }
     ],

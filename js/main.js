@@ -64,16 +64,6 @@ function populateContent(content) {
     });
   }
 
-  // Gallery
-  const gallery = document.getElementById('gallery');
-  content.gallery.forEach((img, idx) => {
-    const image = document.createElement('img');
-    image.src = img.src;
-    image.alt = img.alt;
-    if (idx === 3) image.classList.add('portrait');
-    gallery.appendChild(image);
-  });
-
   // Menu
   const menuSection = document.getElementById('menu');
   content.menu.forEach(menu => {

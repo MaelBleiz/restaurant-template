@@ -32,18 +32,7 @@
   .info-image img, #info-image {
     max-width: 90vw;
   }
-  .gallery {
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md) var(--spacing-sm);
-  }
-  .gallery img {
-    width: 95vw;
-    height: 380px;
-  }
-  .gallery img.portrait {
-    width: 60vw;
-    height: 250px;
-  }
+  
   .menu-section {
     gap: var(--spacing-md);
     padding: var(--spacing-md) var(--spacing-sm);
@@ -139,18 +128,7 @@
   .info-image img, #info-image {
     max-width: 70vw;
   }
-  .gallery {
-    gap: var(--spacing-md);
-    padding: var(--spacing-lg) var(--spacing-md);
-  }
-  .gallery img {
-    width: 45vw;
-    height: 200px;
-  }
-  .gallery img.portrait {
-    width: 28vw;
-    height: 300px;
-  }
+  
   .menu-section {
     gap: var(--spacing-lg);
     padding: var(--spacing-lg) var(--spacing-md);
@@ -214,18 +192,6 @@
     font-size: var(--font-size-xl);
   }
 
-  .gallery {
-    gap: var(--spacing-lg);
-    padding: var(--spacing-lg);
-  }
-  .gallery img {
-    width: 400px;
-    height: 300px;
-  }
-  .gallery img.portrait {
-    width: 260px;
-    height: 400px;
-  }
   .menu-section {
     gap: var(--spacing-lg);
     padding: var(--spacing-lg);
