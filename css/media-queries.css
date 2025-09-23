@@ -2,7 +2,7 @@
 /* Mobile: up to 600px */
 @media (max-width: 600px) {
   body {
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
   }
   header {
     padding: var(--spacing-sm) 0;
@@ -20,8 +20,15 @@
     gap: var(--spacing-md);
   }
   .info-text h1 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
     text-align: center;
+    line-height: 1.2;
+  }
+  
+  .info-text h1 .special {
+    font-size: var(--font-size-lg);
+    display: block;
+    margin-top: 0.5rem;
   }
   
   .info-text p {
@@ -31,6 +38,11 @@
   
   .info-image img, #info-image {
     max-width: 90vw;
+  }
+  
+  /* Button styles */
+  .reservation-button {
+    font-size: var(--font-size-sm);
   }
   
   .menu-section {
@@ -46,6 +58,15 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
+  
+  .menu-item h2 {
+    font-size: var(--font-size-base);
+  }
+  
+  .menu-list li {
+    font-size: var(--font-size-sm);
+  }
+  
   .location-section {
     flex-direction: column;
     align-items: center;
@@ -65,7 +86,7 @@
     object-fit: cover;
   }
   .address-contact {
-    font-size: 1rem;
+    font-size: var(--font-size-sm);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,9 +113,30 @@
     padding: var(--spacing-sm);
   }
   
+  .description-text h2 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .description-text p {
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Contact box styles */
+  .contact-box h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .contact-info p {
+    font-size: var(--font-size-sm);
+  }
+  
   #footer-nav {
     flex-direction: column;
     gap: var(--spacing-sm);
+  }
+  
+  #footer-nav a {
+    font-size: var(--font-size-sm);
   }
   
   /* Floating contact button mobile styles */
@@ -114,6 +156,8 @@
     padding: var(--spacing-md);
   }
 }
+
+
 
 /* Small Tablet: 601px to 800px */
 @media (min-width: 601px) and (max-width: 800px) {
