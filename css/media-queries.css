@@ -51,6 +51,7 @@
     flex-direction: column;
     align-items: center;
   }
+  
   .menu-item {
     width: calc(100vw - 4 * var(--spacing-sm));
     max-width: 350px;

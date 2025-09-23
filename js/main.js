@@ -66,6 +66,12 @@ function populateContent(content) {
 
   // Menu
   const menuSection = document.getElementById('menu');
+  
+  // Create and add background overlay for menu section
+  const menuBackgroundOverlay = document.createElement('div');
+  menuBackgroundOverlay.className = 'menu-background-overlay';
+  menuSection.appendChild(menuBackgroundOverlay);
+  
   content.menu.forEach(menu => {
     const menuDiv = document.createElement('div');
     menuDiv.className = 'menu-item';
