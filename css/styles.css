@@ -141,13 +141,15 @@ header {
   flex: 1 1 300px;
   display: flex;
   justify-content: center;
+  min-width: 0;
 }
 
 #info-image {
   border-radius: var(--border-radius);
   border: 25px solid var(--color-primary);
   width: 100%;
-  max-width: min(600px, 100%);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Reservation Button */
